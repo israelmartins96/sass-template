@@ -1,0 +1,34 @@
+// Button background colour.
+$btn-bg: (
+    "default": #29aae3,
+    "hover": #3abbf4,
+    "active": #156184
+);
+
+// Font weight.
+$font-weight: (
+    "normal": 400,
+    "medium": 500,
+    "bold": 700
+);
+
+// Link text colour.
+$link-colour: (
+    "default": #006cbe,
+    "hover": #6a6a6a,
+    "active": #4507ac
+);
+
+// Page background colour.
+$page-bg: (
+    "default": #fefefe,
+    "dark": #4e4e4e
+);
+
+// Text colour.
+$text-colour: (
+    "body": #6a6a6a,
+    "dark-bg": #fefefe,
+    "heading": #4e4e4e,
+    "placeholder": #aaa
+);

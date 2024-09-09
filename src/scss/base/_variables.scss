@@ -3,42 +3,12 @@ $_-bg-success: #10ab44;
 $_-border_colour: #aaa;
 $_-border_radius: 0.125rem;
 $_-border_width: 1px;
-$_-pad: (
-    "x1": 0.125rem,
-    "x2": 0.25rem,
-    "x4": 0.5rem,
-    "x6": 0.75rem
-);
-$btn-bg: (
-    "default": #29aae3,
-    "hover": #3abbf4,
-    "active": #156184
-);
+$_-pad: 0.125rem;
 $btn-border_radius: 0.25rem;
 $btn-font_size: 1.25rem;
 $btn-pad: 0.5rem 1.5rem;
 $btn-text_colour: #fefefe;
 $letter-space: 0.5px;
-$link-colour: (
-    "default": #006cbe,
-    "hover": #6a6a6a,
-    "active": #4507ac
-);
-$page-bg: (
-    "default": #fefefe,
-    "dark": #4e4e4e
-);
 $page-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-$text-colour: (
-    "body": #6a6a6a,
-    "dark-bg": #fefefe,
-    "heading": #4e4e4e,
-    "placeholder": #aaa
-);
 $text-font_size: 1.25rem;
 $text-line_height: 1.5;
-$text-weight: (
-    "normal": 400,
-    "medium": 500,
-    "bold": 700
-);

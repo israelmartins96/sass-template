@@ -4,8 +4,8 @@ body {
 
 /** Elements **/
 h1, h2, h3, h4, h5, h6 {
-    color: map-get( $text-colour, heading );
-    font-weight: map-get( $text-weight, bold );
+    @include text-colour( heading );
+    @include font-weight();
 }
 
 h1, h2, h3, h4, h5, h6, p, a {
@@ -13,9 +13,9 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 p {
-    color: map-get( $text-colour, body );
+    @include text-colour();
     line-height: $text-line_height;
-    padding-bottom: map-get( $_-pad, x6 );
+    padding-bottom: padding(6);
 }
 
 p, a {
@@ -23,21 +23,21 @@ p, a {
 }
 
 a {
-    color: map-get( $link-colour, default );
+    @include link-colour();
     text-decoration: none;
     outline: none;
     &:hover, &:not(.skip-link):focus {
-        color: map-get( $link-colour, hover );
+        @include link-colour( hover );
         text-decoration: underline;
     }
     &:active, &:not(.skip-link):active {
-        color: map-get( $link-colour, active );
+        @include link-colour( active );
         text-decoration: none;
     }
 }
 
 button {
-    background-color: map-get( $btn-bg, default );
+    @include btn-bg();
     color: $btn-text_colour;
     font-size: $btn-font_size;
     padding: $btn-pad;
@@ -45,18 +45,18 @@ button {
     border-radius: $btn-border_radius;
     outline: none;
     &:hover {
-        background-color: map-get( $btn-bg, hover );
+        @include btn-bg( hover );
     }
     &:active {
-        background-color: map-get( $btn-bg, active );
+        @include btn-bg( active );
     }
 }
 
 input[type="number"] {
     font-size: 1.125rem;
-    padding: map-get( $_-pad, x1 ) map-get( $_-pad, x2 );
-    border: ( $_-border_width * 2 ) solid $_-border_colour;
-    border-radius: ( $_-border_radius * 2 );
+    padding: padding() padding(2);
+    @include border(2);
+    @include border-radius(2);
     outline: none;
 }
 
@@ -68,13 +68,13 @@ li {
 .container {
     width: 100%;
     min-height: 100vh;
-    background-color: map-get( $page-bg, default );
+    @include page-bg();
     .page-title-container {
         text-align: center;
-        padding: ( map-get( $_-pad, x4 ) * 2 ) 0 ( map-get( $_-pad, x4 ) * 4 ) 0;
+        padding: padding(8) 0 padding(16) 0;
     }
     .main-content {
-        padding: ( map-get( $_-pad, x4 ) * 4 );
+        padding: padding(16);
     }
 }
 
@@ -83,9 +83,9 @@ li {
     position: fixed;
     top: 0;
     left: 0;
-    color: map-get( $text-colour, dark-bg );
-    background-color: map-get( $page-bg, dark );
-    padding: map-get( $_-pad, x2 ) map-get( $_-pad, x4 );
+    @include text-colour( dark-bg );
+    @include btn-bg( active );
+    padding: padding(2) padding(4);
     translate: 0 -100%;
     transition: translate 0.2s ease-in-out;
 }

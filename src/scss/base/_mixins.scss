@@ -1,0 +1,34 @@
+// Border.
+@mixin border( $width: 1, $type: solid, $colour: $_-border_colour ) {
+    border: ( $_-border_width * $width ) $type $colour;
+}
+
+// Border radius.
+@mixin border-radius( $radius: 1 ) {
+    border-radius: $_-border_radius * $radius;
+}
+
+// Button background colour.
+@mixin btn-bg( $state: default ) {
+    background: map-get( $btn-bg, $state );
+}
+
+// Font weight.
+@mixin font-weight( $weight: bold ) {
+    font-weight: map-get( $font-weight, $weight );
+}
+
+// Link text colour.
+@mixin link-colour( $state: default ) {
+    color: map-get( $link-colour, $state );
+}
+
+// Page background colour.
+@mixin page-bg( $state: default ) {
+    background: map-get( $page-bg, $state );
+}
+
+// Text colour.
+@mixin text-colour( $state: body ) {
+    color: map-get( $text-colour, $state );
+}

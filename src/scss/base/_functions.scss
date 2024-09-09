@@ -1,0 +1,4 @@
+// Padding.
+@function padding( $qty: 1 ) {
+    @return ( $_-pad * $qty );
+}
