@@ -1,7 +1,7 @@
 {
-  "name": "sass-test",
+  "name": "sass-template",
   "version": "0.1.0",
-  "description": "Sass SCSS test tutorial.",
+  "description": "A Gulp-powered Sass workflow for efficient CSS preprocessing, bundling, and optimisation.",
   "type": "module",
   "main": "index.js",
   "scripts": {
